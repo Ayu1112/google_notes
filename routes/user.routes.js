@@ -16,7 +16,8 @@ try {
         }else{
             const user=new userModel({name,email,pass:hash})
             await user.save()
-           res.json({msg:"User registered successfully",user:req.body}) }
+           res.json({msg:"User registered successfully",user:req.body})
+         }
     })
 
 } catch (err) {
